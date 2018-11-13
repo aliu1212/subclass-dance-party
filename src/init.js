@@ -1,6 +1,13 @@
 $(document).ready(function() {
   window.dancers = [];
-
+  // $('.dancer2').hover(
+  //   function() {
+  //     $(this).css("visibility", "hidden");
+  //     console.log('test');
+  //   }, 
+  //   function() {
+  //     $(this).css("visibility", "visible");
+  //   });
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one 

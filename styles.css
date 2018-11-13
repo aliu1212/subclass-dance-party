@@ -28,12 +28,19 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .dancer2{
-  border:10px solid rgb(21, 0, 255);
-  border-radius:10px;
+  width: 183px;
+  height: 350px;
   position:absolute;
+  background-image: url("https://mbtskoudsalg.com/images/dancer-transparent-animated-gif-4.gif");
+  background-color: Transparent;
+  border: none;
+}
+.dancer2:hover {
+  visibility: hidden;
 }
 .dancer3{
-  border:10px solid rgb(0, 255, 42);
-  border-radius:10px;
   position:absolute;
+  height: 497px;
+  width: 350px;
+  background-image: url("https://i.gifer.com/7Uz.gif");
 }

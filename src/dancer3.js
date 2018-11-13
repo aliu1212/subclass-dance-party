@@ -1,13 +1,15 @@
-var makeDancer3 = function(top, left, timeBetweenSteps) {
+var makeCarlton = function(top, left, timeBetweenSteps) {
+
   makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="dancer3"></span>');
+  this.$node = $('<span class="dancer3"></span>');
+  this.setPosition(top, left);
 };
 
-makeDancer3.prototype = Object.create(makeDancer.prototype);
-makeDancer3.prototype.constructor = makeDancer3;
+makeCarlton.prototype = Object.create(makeDancer.prototype);
+makeCarlton.prototype.constructor = makeCarlton;
 
-makeDancer3.prototype.step = function() {
+makeCarlton.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.slideDown();
-  this.$node.slideUp();
+  // this.$node.slideDown();
+  // this.$node.slideUp();
 };
