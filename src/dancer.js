@@ -15,9 +15,17 @@ makeDancer.prototype.step = function() {
 };
 
 makeDancer.prototype.setPosition = function(top, left) {
-  var styleSettings = {
+  let styleSettings = {
     top: this.top,
     left: this.left
   };
   this.$node.css(styleSettings);
+};
+
+makeDancer.prototype.lineUp = function() {
+  // let styleSettings1 = {
+  //   top: 50%
+  // };
+  // this.$node.css(styleSettings1);
+  this.setPosition(700, this.left);
 };

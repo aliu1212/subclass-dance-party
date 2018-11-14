@@ -12,7 +12,8 @@ describe('snoop', function() {
   });
 
   it('should should have an image', function() {
-    expect(snoop.$node.css.background-image).to.be.true;
+
+    //expect(snoop.$node.attr('src').to.be.("https://mbtskoudsalg.com/images/dancer-transparent-animated-gif-4.gif");
   });
 
   describe('dance', function() {
