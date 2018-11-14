@@ -4,12 +4,13 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image: url("https://www.motionbackgroundsforfree.com/wp-content/uploads/2012/09/Screen-shot-2012-09-06-at-2.53.42-PM.png");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .lineUpButton{
+.title, .addDancerButton, .lineUpButton, .closestDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -23,15 +24,12 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
-  /* width: 300px;
-  height: 300px; */
   position:absolute;
 }
 .dancer2{
   width: 183px;
   height: 350px;
   position:absolute;
-  /* background-image: url("https://mbtskoudsalg.com/images/dancer-transparent-animated-gif-4.gif"); */
   background-color: Transparent;
   border: none;
 }
@@ -44,6 +42,3 @@ body, a:link, a:visited, a:active{
   width: 350px;
   background-image: url("https://i.gifer.com/7Uz.gif");
 }
-/* .dancer3:hover {
-  float: right;
-} */

@@ -4,13 +4,37 @@ $(document).ready(function() {
   $('.lineUpButton').on('click', function(event) {
     let diff = 100 / window.dancers.length;
     let pos = 0 - diff;
-    for (var i = 0; i < window.dancers.length; i++) {
+    for (let i = 0; i < window.dancers.length; i++) {
       pos += diff;
       let space = '' + pos + '%';
       window.dancers[i].$node.animate({left: space, top: '50%'});
     }
     // console.log(window.dancers);
     // ${'.dancer2'}.remove();
+  });
+
+  $('.closestDancerButton').on('click', function(event) {
+    let closeDist = 100000000;
+    let closest = [];
+
+    for (let i = 0; i < window.dancers.length-1; i++) {
+      for (let j = i + 1; j < window.dancers.length; j++) {
+        let xdiff = window.dancers[i].left - window.dancers[j].left;
+        let ydiff = window.dancers[i].top - window.dancers[j].top;
+        let currentDist = Math.sqrt((xdiff)^2 + (ydiff)^2);
+        if (currentDist < closeDist) {
+          closeDist = currentDist;
+          closest = [window.dancers[i], window.dancers[j]];
+        }
+        
+      }     
+    }
+  
+    closest[0].$node.animate({left: '45%', top: '50%'});
+    closest[1].$node.animate({left: '55%', top: '50%'});
+    console.log("distance", closeDist);
+    console.log("close pair", closest);
+
   });
 
   $('.addDancerButton').on('click', function(event) {
